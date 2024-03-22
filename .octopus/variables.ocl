@@ -7,5 +7,5 @@ variable "OctopusPrintVariables" {
 }
 
 variable "branch" {
-    value "main" {}
+    value "second" {}
 }

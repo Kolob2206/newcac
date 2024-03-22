@@ -15,7 +15,7 @@ step "run-a-script" {
         worker_pool_variable = ""
 
         git_dependencies {
-            default_branch = "main"
+            default_branch = "main#{branch}"
             git_credential_id = "GitCredentials-421"
             git_credential_type = "Library"
             repository_uri = "https://github.com/Kolob2206/newcac.git"

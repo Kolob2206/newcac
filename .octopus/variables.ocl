@@ -7,7 +7,5 @@ variable "OctopusPrintVariables" {
 }
 
 variable "branch" {
-    value "second" {
-        environment = ["development"]
-    }
+    value "second" {}
 }

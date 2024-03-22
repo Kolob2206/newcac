@@ -22,3 +22,21 @@ step "run-a-script" {
         }
     }
 }
+
+step "check-branch-name" {
+    name = "check branch name"
+    properties = {
+        Octopus.Action.TargetRoles = "single"
+    }
+
+    action {
+        action_type = "Octopus.Script"
+        properties = {
+            Octopus.Action.RunOnServer = "false"
+            Octopus.Action.Script.ScriptBody = "write-host #{Octopus.Release.Git.BranchName}"
+            Octopus.Action.Script.ScriptSource = "Inline"
+            Octopus.Action.Script.Syntax = "PowerShell"
+        }
+        worker_pool_variable = ""
+    }
+}

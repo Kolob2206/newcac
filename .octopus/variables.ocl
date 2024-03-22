@@ -1,11 +1,11 @@
-variable "Octopus.Release.Git.BranchName" {
-    value "main" {}
-}
-
 variable "OctopusPrintEvaluatedVariables" {
     value "True" {}
 }
 
 variable "OctopusPrintVariables" {
     value "True" {}
+}
+
+variable "branch" {
+    value "main" {}
 }

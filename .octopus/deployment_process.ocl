@@ -22,3 +22,20 @@ step "run-a-script" {
         }
     }
 }
+
+step "myteststeptemplate" {
+    name = "MyTestStepTemplate"
+    properties = {
+        Octopus.Action.TargetRoles = "dummy"
+    }
+
+    action {
+        properties = {
+            MyTestStepParameter = "asdf"
+            Octopus.Action.RunOnServer = "false"
+            Octopus.Action.Template.Id = "ActionTemplates-3104"
+            Octopus.Action.Template.Version = "1"
+        }
+        worker_pool_variable = ""
+    }
+}

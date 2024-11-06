@@ -5,7 +5,7 @@ variable "repo" {
 }
 
 variable "Instances" {
-    value "test" {
+    value "tesingt" {
         description = ""
     }
 }

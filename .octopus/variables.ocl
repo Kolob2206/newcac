@@ -21,3 +21,19 @@ variable "Instances" {
         }
     }
 }
+
+variable "Instances2" {
+    value "tesingt" {
+        description = ""
+
+        prompt {
+            description = ""
+            display_settings = {
+                Octopus.ControlType = "Select"
+                Octopus.SelectOptions = "value1|description"
+            }
+            label = ""
+            required = true
+        }
+    }
+}

@@ -9,3 +9,7 @@ variable "newvarforPR" {
 variable "repo" {
     value "https://github.com/Kolob2206/newcac.git" {}
 }
+
+variable "blah" {
+    value "blurp" {}
+}

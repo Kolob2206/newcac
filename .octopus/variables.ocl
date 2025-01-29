@@ -1,39 +1,7 @@
+variable "branch" {
+    value "fourth" {}
+}
+
 variable "repo" {
-    value "https://github.com/Kolob2206/newcac.git" {
-        description = ""
-    }
-}
-
-variable "Instances" {
-    value "tesingt" {
-        description = ""
-
-        prompt {
-            description = ""
-            display_settings = {
-                Octopus.ControlType = "Select"
-                Octopus.SelectOptions = <<-EOT
-                    1|1
-                    2|2
-                    EOT
-            }
-            label = ""
-        }
-    }
-}
-
-variable "Instances2" {
-    value "tesingt" {
-        description = ""
-
-        prompt {
-            description = ""
-            display_settings = {
-                Octopus.ControlType = "Select"
-                Octopus.SelectOptions = "value1|description"
-            }
-            label = ""
-            required = true
-        }
-    }
+    value "https://github.com/Kolob2206/newcac.git" {}
 }

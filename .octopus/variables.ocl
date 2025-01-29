@@ -1,5 +1,5 @@
 variable "branch" {
-    value "third" {}
+    value "fourth" {}
 }
 
 variable "repo" {

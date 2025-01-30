@@ -1,5 +1,5 @@
 variable "branch" {
-    value "Before the merge" {}
+    value "After the merge" {}
 }
 
 variable "newvarforPR" {

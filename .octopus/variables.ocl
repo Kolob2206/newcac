@@ -11,5 +11,5 @@ variable "repo" {
 }
 
 variable "blah" {
-    value "blurp" {}
+    value "After creating PR but not merging it" {}
 }

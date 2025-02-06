@@ -6,10 +6,6 @@ variable "newvarforPR" {
     value "LetsGo!" {}
 }
 
-variable "repo" {
-    value "https://github.com/Kolob2206/newcac.git" {}
-}
-
 variable "blah" {
     value "After creating PR but not merging it" {}
 }

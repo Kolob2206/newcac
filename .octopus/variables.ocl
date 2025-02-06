@@ -13,3 +13,11 @@ variable "repo" {
 variable "blah" {
     value "After creating PR but not merging it" {}
 }
+
+variable "OctopusPrintEvaluatedVariables" {
+    value "True" {}
+}
+
+variable "OctopusPrintVariables" {
+    value "True" {}
+}

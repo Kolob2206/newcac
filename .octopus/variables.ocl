@@ -8,6 +8,8 @@ variable "newvarforPR" {
 
 variable "blah" {
     value "After creating PR but not merging it" {}
+
+    value "asdf" {}
 }
 
 variable "OctopusPrintEvaluatedVariables" {

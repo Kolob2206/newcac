@@ -4,8 +4,15 @@ step "script-custom-cac" {
     action {
         properties = {
             Octopus.Action.Template.Id = "ActionTemplates-3661"
-            Octopus.Action.Template.Version = "9"
+            Octopus.Action.Template.Version = "10"
         }
         worker_pool = "hosted-windows"
+
+        git_dependencies {
+            default_branch = "blurp"
+            git_credential_id = "GitCredentials-421"
+            git_credential_type = "Library"
+            repository_uri = "https://github.com/Kolob2206/newcac.git"
+        }
     }
 }

@@ -46,7 +46,7 @@ step "script-custom-cac" {
         properties = {
             Octopus.Action.RunOnServer = "false"
             Octopus.Action.Template.Id = "ActionTemplates-3661"
-            Octopus.Action.Template.Version = "5"
+            Octopus.Action.Template.Version = "6"
         }
         worker_pool_variable = ""
 

@@ -9,7 +9,7 @@ step "run-a-script" {
         properties = {
             Octopus.Action.GitRepository.Source = "Project"
             Octopus.Action.RunOnServer = "false"
-            Octopus.Action.Script.ScriptFileName = "scripts/script.ps"
+            Octopus.Action.Script.ScriptFileName = "script.ps"
             Octopus.Action.Script.ScriptSource = "GitRepository"
         }
         worker_pool_variable = ""

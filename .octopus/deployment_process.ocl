@@ -39,17 +39,13 @@ step "run-a-script2" {
 step "script-custom-cac" {
     condition = "Always"
     name = "script custom cac"
-    properties = {
-        Octopus.Action.TargetRoles = "single"
-    }
 
     action {
         properties = {
-            Octopus.Action.RunOnServer = "false"
             Octopus.Action.Template.Id = "ActionTemplates-3661"
             Octopus.Action.Template.Version = "6"
         }
-        worker_pool_variable = ""
+        worker_pool = "hosted-windows"
 
         git_dependencies {
             default_branch = "main"

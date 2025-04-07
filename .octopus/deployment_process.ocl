@@ -1,5 +1,4 @@
 step "script-custom-cac" {
-    condition = "Always"
     name = "script custom cac"
 
     action {

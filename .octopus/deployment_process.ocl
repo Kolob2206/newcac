@@ -1,37 +1,3 @@
-step "run-a-script" {
-    name = "Run a Script"
-
-    action {
-        action_type = "Octopus.Script"
-        properties = {
-            Octopus.Action.GitRepository.Source = "Project"
-            Octopus.Action.Script.ScriptFileName = "script.ps1"
-            Octopus.Action.Script.ScriptSource = "GitRepository"
-        }
-        worker_pool = "hosted-windows"
-    }
-}
-
-step "run-a-script2" {
-    condition = "Always"
-    name = "Run a Script2"
-    properties = {
-        Octopus.Action.TargetRoles = "drop"
-    }
-
-    action {
-        action_type = "Octopus.Script"
-        properties = {
-            Octopus.Action.GitRepository.Source = "Project"
-            Octopus.Action.RunOnServer = "false"
-            Octopus.Action.Script.ScriptFileName = "script.ps"
-            Octopus.Action.Script.ScriptSource = "GitRepository"
-            OctopusUseBundledTooling = "False"
-        }
-        worker_pool_variable = ""
-    }
-}
-
 step "script-custom-cac" {
     condition = "Always"
     name = "script custom cac"

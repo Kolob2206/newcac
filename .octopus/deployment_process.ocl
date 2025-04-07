@@ -7,12 +7,5 @@ step "script-custom-cac" {
             Octopus.Action.Template.Version = "8"
         }
         worker_pool = "hosted-windows"
-
-        git_dependencies {
-            default_branch = "main"
-            git_credential_id = "GitCredentials-421"
-            git_credential_type = "Library"
-            repository_uri = "https://github.com/Kolob2206/newcac.git"
-        }
     }
 }

@@ -39,7 +39,7 @@ step "script-custom-cac" {
     action {
         properties = {
             Octopus.Action.Template.Id = "ActionTemplates-3661"
-            Octopus.Action.Template.Version = "6"
+            Octopus.Action.Template.Version = "7"
         }
         worker_pool = "hosted-windows"
 

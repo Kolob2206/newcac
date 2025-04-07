@@ -37,6 +37,7 @@ step "run-a-script2" {
 }
 
 step "script-custom-cac" {
+    condition = "Always"
     name = "script custom cac"
     properties = {
         Octopus.Action.TargetRoles = "single"

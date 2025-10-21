@@ -13,3 +13,11 @@ variable "repo" {
 variable "blah" {
     value "After creating PR but not merging it" {}
 }
+
+variable "account" {
+    type = "AzureAccount"
+
+    value "kenny-sp-ctd" {
+        environment = ["to-delete"]
+    }
+}

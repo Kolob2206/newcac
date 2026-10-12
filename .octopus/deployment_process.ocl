@@ -23,6 +23,7 @@ step "iis" {
     }
 
     action {
+        excluded_environments = ["qa"]
         properties = {
             Octopus.Action.Package.FeedId = "octopus-server-built-in"
             Octopus.Action.Package.PackageId = "buildinfo"

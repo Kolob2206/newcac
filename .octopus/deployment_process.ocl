@@ -15,3 +15,31 @@ step "run-a-script" {
         worker_pool_variable = ""
     }
 }
+
+step "iis" {
+    name = "IIS"
+    properties = {
+        Octopus.Action.TargetRoles = "cli"
+    }
+
+    action {
+        properties = {
+            Octopus.Action.Package.FeedId = "octopus-server-built-in"
+            Octopus.Action.Package.PackageId = "buildinfo"
+            Octopus.Action.Template.Id = "ActionTemplates-5903"
+            Octopus.Action.Template.Version = "0"
+            package = "{\"PackageId\":\"buildinfo\",\"FeedId\":\"octopus-server-built-in\"}"
+        }
+        worker_pool_variable = ""
+
+        packages {
+            acquisition_location = "Server"
+            feed = "octopus-server-built-in"
+            package_id = "buildinfo"
+            properties = {
+                PackageParameterName = "package"
+                SelectionMode = "deferred"
+            }
+        }
+    }
+}

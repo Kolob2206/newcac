@@ -29,7 +29,7 @@ step "iis" {
             Octopus.Action.Package.PackageId = "buildinfo"
             Octopus.Action.RunOnServer = "false"
             Octopus.Action.Template.Id = "ActionTemplates-5903"
-            Octopus.Action.Template.Version = "2"
+            Octopus.Action.Template.Version = "3"
             package = "{\"PackageId\":\"buildinfo\",\"FeedId\":\"octopus-server-built-in\"}"
         }
         worker_pool_variable = ""
